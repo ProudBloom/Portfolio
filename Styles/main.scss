@@ -1,5 +1,49 @@
-// Color palette variables
 $primary-color: #f1f1f1;
 $secondary-color: #303840;
 $text-color: #364F6B;
 $accent-color: #FE0065;
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+@mixin centerElement 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar
+{
+    position: fixed;
+    min-width: 150px;
+    height: 100vh;
+    padding: 20px;
+    background-color: $secondary-color;
+    text-align: center;
+
+    .sidebar__items
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50%;
+
+        a
+        {
+            padding: 25px 0;
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 2rem;
+            text-transform: uppercase;
+            &:hover
+            {
+                cursor: pointer;
+                opacity: .6;
+            }
+        }
+    }
+}

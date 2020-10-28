@@ -1,1 +1,39 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  min-width: 150px;
+  height: 100vh;
+  padding: 20px;
+  background-color: #303840;
+  text-align: center;
+}
+
+.sidebar .sidebar__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50%;
+}
+
+.sidebar .sidebar__items a {
+  padding: 25px 0;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.sidebar .sidebar__items a:hover {
+  cursor: pointer;
+  opacity: .6;
+}
+/*# sourceMappingURL=main.css.map */
