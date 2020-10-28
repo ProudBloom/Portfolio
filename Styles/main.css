@@ -6,7 +6,7 @@
 
 .sidebar {
   position: fixed;
-  min-width: 150px;
+  min-width: 270px;
   height: 100vh;
   padding: 20px;
   background-color: #303840;
@@ -30,10 +30,105 @@
   color: #f1f1f1;
   font-size: 2rem;
   text-transform: uppercase;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
 }
 
 .sidebar .sidebar__items a:hover {
   cursor: pointer;
-  opacity: .6;
+  color: #FE0065;
+}
+
+header {
+  margin-left: 270px;
+  background-image: url("../Img/BannerPhoto.png");
+  background-repeat: no-repeat;
+  width: calc(100vw - $offset);
+  height: 100vh;
+}
+
+header .header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .header__content .header__paragraph {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #f1f1f1;
+}
+
+header .header__content .header__paragraph h2 {
+  font-size: 3.5rem;
+  margin-top: 10%;
+}
+
+header .header__content .header__paragraph h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+header .header__content .header__photo img {
+  margin-top: 50%;
+  height: 250px;
+  width: 250px;
+  border: 15px solid #303840;
+  border-radius: 50%;
+}
+
+header .header__icons {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+header .header__icons svg {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+header .header__icons svg:hover {
+  fill: #FE0065;
+}
+
+header .header__button {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+header .header__button button {
+  padding: 20px;
+  border: none;
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  background: rgba(28, 28, 28, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  cursor: pointer;
+}
+
+header .header__button button i {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  padding: 0 0 0 8px;
 }
 /*# sourceMappingURL=main.css.map */
