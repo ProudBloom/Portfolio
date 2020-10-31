@@ -40,14 +40,14 @@
 }
 
 header {
-  margin-left: 270px;
-  background-image: url("../Img/BannerPhoto.png");
+  background-image: url("../Img/pexels-alex-conchillos-3745234.jpg");
   background-repeat: no-repeat;
   width: calc(100vw - $offset);
   height: 100vh;
 }
 
-header .header__content {
+header .header__main-content {
+  margin-left: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,35 +57,65 @@ header .header__content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-header .header__content .header__paragraph {
+header .header__main-content .header__paragraph {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   color: #f1f1f1;
+  text-align: center;
 }
 
-header .header__content .header__paragraph h2 {
+header .header__main-content .header__paragraph h2 {
   font-size: 3.5rem;
-  margin-top: 10%;
 }
 
-header .header__content .header__paragraph h4 {
+header .header__main-content .header__paragraph h4 {
   font-size: 1.5rem;
   font-weight: lighter;
 }
 
-header .header__content .header__photo img {
-  margin-top: 50%;
+header .header__main-content .header__photo img {
+  margin-top: 20%;
   height: 250px;
   width: 250px;
   border: 15px solid #303840;
   border-radius: 50%;
+}
+
+header .header__main-content .header__button-wrapper {
+  margin-top: 10%;
+}
+
+header .header__main-content .header__button-wrapper .header__button {
+  font-size: 1.1em;
+  display: inline-block;
+  padding: .7em 1.2em;
+  border: 0.1em solid #f1f1f1;
+  margin: 0 .3em .3em 0;
+  border-radius: .12em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+  color: #f1f1f1;
+  text-align: center;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  background-color: rgba(241, 241, 241, 0);
+  outline: none;
+  cursor: pointer;
+}
+
+header .header__main-content .header__button-wrapper .header__button:hover {
+  color: #303840;
+  background-color: #f1f1f1;
 }
 
 header .header__icons {
@@ -101,34 +131,10 @@ header .header__icons svg {
   cursor: pointer;
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
+  fill: #f1f1f1;
 }
 
 header .header__icons svg:hover {
   fill: #FE0065;
-}
-
-header .header__button {
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-}
-
-header .header__button button {
-  padding: 20px;
-  border: none;
-  color: #f1f1f1;
-  font-size: 1.2rem;
-  background: rgba(28, 28, 28, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  outline: none;
-  cursor: pointer;
-}
-
-header .header__button button i {
-  font-size: 1.2rem;
-  margin-top: 5px;
-  padding: 0 0 0 8px;
 }
 /*# sourceMappingURL=main.css.map */

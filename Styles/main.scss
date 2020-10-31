@@ -52,26 +52,25 @@ $offset: 270px;
 
 header
 {
-    margin-left: $offset;
-    background-image: url('../Img/BannerPhoto.png');
+    background-image: url('../Img/pexels-alex-conchillos-3745234.jpg');
     background-repeat: no-repeat;
     width: calc(100vw - $offset);
     height: 100vh;
 
-    .header__content
+    .header__main-content
     {
+        margin-left: $offset;
         @include centerElement();
-        display: flex;
-        justify-content: space-around;
+        flex-direction: column;
 
         .header__paragraph
         {
             flex-direction: column;
             color: $primary-color;
+            text-align: center;
             h2
             {
                 font-size: 3.5rem;
-                margin-top: 10%;
             }
             h4
             {
@@ -83,11 +82,38 @@ header
         {
             img
             {
-                margin-top: 50%;
+                margin-top: 20%;
                 height: 250px;
                 width: 250px;
                 border: 15px solid $secondary-color;
                 border-radius: 50%;
+            }
+        }
+        .header__button-wrapper
+        {
+            margin-top: 10%;
+            .header__button
+            {
+                font-size: 1.1em;
+                display: inline-block;
+                padding: .7em 1.2em;
+                border: 0.1em solid $primary-color;
+                margin: 0 .3em .3em 0;
+                border-radius: .12em;
+                box-sizing: border-box;
+                text-decoration: none;
+                font-weight: bold;
+                color: $primary-color;
+                text-align: center;
+                transition: all .2s;
+                background-color: rgba($color: $primary-color, $alpha: .0);
+                outline: none;
+                cursor: pointer;
+                &:hover
+                {
+                    color: $secondary-color;
+                    background-color: $primary-color;
+                }
             }
         }
     }
@@ -104,32 +130,10 @@ header
             height: 30px;
             cursor: pointer;
             transition: .3s ease-in;
+            fill: $primary-color;
             &:hover
             {
                 fill: $accent-color;
-            }
-        }
-    }
-    .header__button
-    {
-        position: absolute;
-        bottom: 50px;
-        right: 50px;
-        button
-        {
-            padding: 20px;
-            border: none;
-            color: $primary-color;
-            font-size: 1.2rem;
-            background: rgba($color: #1c1c1c, $alpha: .5);
-            display: flex;
-            outline: none;
-            cursor: pointer;
-            i
-            {
-                font-size: 1.2rem; 
-                margin-top: 5px; 
-                padding: 0 0 0 8px;
             }
         }
     }
