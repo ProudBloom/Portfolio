@@ -81,11 +81,22 @@ header .header__main-content .header__paragraph h4 {
   font-weight: lighter;
 }
 
-header .header__main-content .header__photo img {
-  margin-top: 20%;
+header .header__main-content .header__photo {
+  position: relative;
+  margin-top: 10%;
   height: 250px;
   width: 250px;
-  border: 15px solid #303840;
+  border: 12px solid #303840;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+header .header__main-content .header__photo::before {
+  display: block;
+  content: ' ';
+  background-image: url("../Img/My-Photo2.png");
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
 }
 

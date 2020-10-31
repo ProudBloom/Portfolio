@@ -32,7 +32,6 @@ $offset: 270px;
         display: flex;
         flex-direction: column;
         margin-top: 50%;
-
         a
         {
             padding: 25px 0;
@@ -80,12 +79,20 @@ header
         }
         .header__photo
         {
-            img
+            position: relative;
+            margin-top: 10%;
+            height: 250px;
+            width: 250px;
+            border: 12px solid $secondary-color;
+            border-radius: 50%;
+            padding: 20px;
+            &::before
             {
-                margin-top: 20%;
+                display: block;
+                content: ' ';
+                background-image: url('../Img/My-Photo2.png');
                 height: 250px;
                 width: 250px;
-                border: 15px solid $secondary-color;
                 border-radius: 50%;
             }
         }
