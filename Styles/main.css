@@ -6,7 +6,7 @@
 
 .sidebar {
   position: fixed;
-  min-width: 270px;
+  min-width: 250px;
   height: 100vh;
   padding: 20px;
   background-color: #303840;
@@ -47,7 +47,7 @@ header {
 }
 
 header .header__main-content {
-  margin-left: 270px;
+  margin-left: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,5 +147,31 @@ header .header__icons svg {
 
 header .header__icons svg:hover {
   fill: #FE0065;
+}
+
+.about {
+  margin-left: 290px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about .about__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */

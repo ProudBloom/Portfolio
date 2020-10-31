@@ -2,7 +2,7 @@ $primary-color: #f1f1f1;
 $secondary-color: #303840;
 $text-color: #364F6B;
 $accent-color: #FE0065;
-$offset: 270px;
+$offset: 290px;
 
 *
 {
@@ -21,7 +21,7 @@ $offset: 270px;
 .sidebar
 {
     position: fixed;
-    min-width: $offset;
+    min-width: 250px;
     height: 100vh;
     padding: 20px;
     background-color: $secondary-color;
@@ -143,5 +143,19 @@ header
                 fill: $accent-color;
             }
         }
+    }
+}
+
+.about
+{
+    margin-left: $offset;
+    padding: 25px;
+    @include centerElement();
+    justify-content: space-around;
+
+    .about__heading
+    {
+        display: flex;
+        flex-direction: column;
     }
 }
