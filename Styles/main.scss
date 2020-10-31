@@ -8,7 +8,6 @@ $offset: 290px;
 {
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
 }
 
 @mixin centerElement 
@@ -20,6 +19,7 @@ $offset: 290px;
 
 .sidebar
 {
+    font-family: 'PT Sans', sans-serif;
     position: fixed;
     min-width: 250px;
     height: 100vh;
@@ -51,6 +51,7 @@ $offset: 290px;
 
 header
 {
+    font-family: 'PT Sans', sans-serif;
     background-image: url('../Img/pexels-alex-conchillos-3745234.jpg');
     background-repeat: no-repeat;
     width: calc(100vw - $offset);
@@ -112,7 +113,7 @@ header
                 font-weight: bold;
                 color: $primary-color;
                 text-align: center;
-                transition: all .2s;
+                transition: .3s ease-in;
                 background-color: rgba($color: $primary-color, $alpha: .0);
                 outline: none;
                 cursor: pointer;
@@ -148,14 +149,31 @@ header
 
 .about
 {
+    font-family: 'Montserrat', sans-serif;
+    color: $secondary-color;
     margin-left: $offset;
     padding: 25px;
     @include centerElement();
-    justify-content: space-around;
+    flex-direction: column;
 
-    .about__heading
+    .about__paragraphs
     {
-        display: flex;
-        flex-direction: column;
+        padding: 20px;
+        font-size: 1.2em;
+        font-weight: 200;
+        line-height: 1.8;
+        text-align: center;
+        h2
+        {
+            font-size: 1.8rem;
+            margin-bottom: 3%;
+        }
+        .about__paragraphs__main
+        {
+            span
+            {
+                font-weight: 500;
+            }
+        }
     }
 }

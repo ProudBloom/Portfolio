@@ -1,10 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
 }
 
 .sidebar {
+  font-family: 'PT Sans', sans-serif;
   position: fixed;
   min-width: 250px;
   height: 100vh;
@@ -40,6 +40,7 @@
 }
 
 header {
+  font-family: 'PT Sans', sans-serif;
   background-image: url("../Img/pexels-alex-conchillos-3745234.jpg");
   background-repeat: no-repeat;
   width: calc(100vw - $offset);
@@ -117,8 +118,8 @@ header .header__main-content .header__button-wrapper .header__button {
   font-weight: bold;
   color: #f1f1f1;
   text-align: center;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
   background-color: rgba(241, 241, 241, 0);
   outline: none;
   cursor: pointer;
@@ -150,6 +151,8 @@ header .header__icons svg:hover {
 }
 
 .about {
+  font-family: 'Montserrat', sans-serif;
+  color: #303840;
   margin-left: 290px;
   padding: 25px;
   display: -webkit-box;
@@ -161,17 +164,26 @@ header .header__icons svg:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.about .about__heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.about .about__paragraphs {
+  padding: 20px;
+  font-size: 1.2em;
+  font-weight: 200;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.about .about__paragraphs h2 {
+  font-size: 1.8rem;
+  margin-bottom: 3%;
+}
+
+.about .about__paragraphs .about__paragraphs__main span {
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */
