@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .sidebar {
@@ -185,5 +186,81 @@ header .header__icons svg:hover {
 
 .about .about__paragraphs .about__paragraphs__main span {
   font-weight: 500;
+}
+
+.about .about__skills {
+  margin: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #364F6B;
+  margin-left: 40px;
+}
+
+.about .about__skills .about__skills__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  min-width: 350px;
+  margin: 0 10px;
+  border: 1px dashed rgba(48, 56, 64, 0.2);
+  border-radius: 15px;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.about .about__skills .about__skills__column:hover {
+  background-color: #303840;
+  color: #f1f1f1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.about .about__skills .about__skills__column:hover svg {
+  fill: #f1f1f1;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+}
+
+.about .about__skills svg {
+  fill: #303840;
+  height: 50px;
+  width: 50px;
+  margin-top: 40px;
+}
+
+.about .about__skills p {
+  font-weight: 500;
+  color: #FE0065;
+  margin-top: 30px;
+}
+
+.about .about__skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about__skills li {
+  font-weight: 200;
+  padding: 8px;
 }
 /*# sourceMappingURL=main.css.map */

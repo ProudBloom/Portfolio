@@ -8,6 +8,7 @@ $offset: 290px;
 {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 @mixin centerElement 
@@ -175,5 +176,58 @@ header
                 font-weight: 500;
             }
         }
+    }
+    .about__skills
+    {
+        margin: 5% 0;
+        display: flex;
+        justify-content: center;
+        color: $text-color;
+        margin-left: 40px;
+
+        .about__skills__column
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            min-width: 350px;
+            margin: 0 10px ;
+            border: 1px dashed rgba($color: $secondary-color, $alpha: .2);
+            border-radius: 15px;
+            transition: .3s ease-in;
+            &:hover
+            {
+                background-color: $secondary-color;
+                color: $primary-color;
+                svg{fill: $primary-color; transition: .5s ease-in;}
+                transform: scale(1.05);
+            }
+        }
+        svg
+        {
+            fill: $secondary-color;
+            height: 50px;
+            width: 50px;
+            margin-top: 40px;
+        }
+        p
+        {
+            font-weight: 500;
+            color: $accent-color;
+            margin-top: 30px;
+        }
+        ul
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        li
+        {
+            font-weight: 200;
+            padding: 8px;
+        }
+
     }
 }
