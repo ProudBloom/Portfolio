@@ -11,7 +11,7 @@ html {
 }
 
 .sidebar {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   position: fixed;
   min-width: 250px;
   height: 100vh;
@@ -37,13 +37,16 @@ html {
   color: #f1f1f1;
   font-size: 2rem;
   text-transform: uppercase;
-  -webkit-transition: .3s ease-in;
-  transition: .3s ease-in;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
 }
 
 .sidebar .sidebar__items a:hover {
   cursor: pointer;
   color: #FE0065;
+  border-left: 3px solid #FE0065;
+  border-right: 3px solid #FE0065;
+  font-size: 2.7rem;
 }
 
 header {
@@ -96,7 +99,7 @@ header .header__main-content .header__photo {
   width: 250px;
   border: 12px solid #303840;
   border-radius: 50%;
-  padding: 20px;
+  padding: 15px;
 }
 
 header .header__main-content .header__photo::before {
@@ -157,7 +160,7 @@ header .header__icons svg:hover {
   fill: #FE0065;
 }
 
-.about {
+.about, .work {
   font-family: 'Montserrat', sans-serif;
   color: #303840;
   margin-left: 290px;
@@ -177,7 +180,7 @@ header .header__icons svg:hover {
           flex-direction: column;
 }
 
-.about .about__paragraphs {
+.about .about__paragraphs, .work .about__paragraphs {
   width: calc(100vw - $offset);
   height: 100vh;
   font-size: 1.2em;
@@ -186,22 +189,22 @@ header .header__icons svg:hover {
   text-align: center;
 }
 
-.about .about__paragraphs h2 {
+.about .about__paragraphs h2, .work .about__paragraphs h2 {
   font-size: 1.8rem;
   margin-bottom: 3%;
 }
 
-.about .about__paragraphs .about__paragraphs__main {
+.about .about__paragraphs .about__paragraphs__main, .work .about__paragraphs .about__paragraphs__main {
   margin: 15% auto;
   text-align: justify;
   width: 50%;
 }
 
-.about .about__paragraphs .about__paragraphs__main span {
+.about .about__paragraphs .about__paragraphs__main span, .work .about__paragraphs .about__paragraphs__main span {
   font-weight: 700;
 }
 
-.about .about__skills {
+.about .about__skills, .work .about__skills {
   margin: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,7 +216,7 @@ header .header__icons svg:hover {
   margin-left: 40px;
 }
 
-.about .about__skills .about__skills__column {
+.about .about__skills .about__skills__column, .work .about__skills .about__skills__column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,33 +236,33 @@ header .header__icons svg:hover {
   transition: .3s ease-in;
 }
 
-.about .about__skills .about__skills__column:hover {
+.about .about__skills .about__skills__column:hover, .work .about__skills .about__skills__column:hover {
   background-color: #303840;
   color: #f1f1f1;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.about .about__skills .about__skills__column:hover svg {
+.about .about__skills .about__skills__column:hover svg, .work .about__skills .about__skills__column:hover svg {
   fill: #f1f1f1;
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
 }
 
-.about .about__skills svg {
+.about .about__skills svg, .work .about__skills svg {
   fill: #303840;
   height: 50px;
   width: 50px;
   margin-top: 40px;
 }
 
-.about .about__skills p {
+.about .about__skills p, .work .about__skills p {
   font-weight: 500;
   color: #FE0065;
   margin-top: 30px;
 }
 
-.about .about__skills ul {
+.about .about__skills ul, .work .about__skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,14 +275,114 @@ header .header__icons svg:hover {
           align-items: center;
 }
 
-.about .about__skills li {
+.about .about__skills li, .work .about__skills li {
   font-weight: 200;
   padding: 8px;
 }
 
-.empty {
+.work h2 {
+  font-size: 1.8rem;
+  margin-bottom: 3%;
+}
+
+.work .work__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.work .work__cards .work__card {
+  width: 420px;
+  height: 280px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  margin: 25px 15px;
+}
+
+.work .work__cards .work__card:hover {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.work .work__cards .work__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
-  height: 1080px;
   width: 100%;
+  height: 100%;
+  background: rgba(48, 56, 64, 0.9);
+  z-index: 2;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  opacity: 0;
+}
+
+.work .work__cards .work__card:hover::before {
+  opacity: 1;
+}
+
+.work .work__cards .work__card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.work .work__cards .work__card .work__card__info {
+  position: relative;
+  z-index: 3;
+  color: #f1f1f1;
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
+.work .work__cards .work__card .work__card__info h2 {
+  margin-left: 5%;
+}
+
+.work .work__cards .work__card .work__card__info p {
+  margin: 0 5% 30% 5%;
+}
+
+.work .work__cards .work__card .work__card__info .card-btn {
+  padding: 15px 20px;
+  position: relative;
+  left: 15px;
+  text-decoration: none;
+  color: #303840;
+  background: rgba(241, 241, 241, 0.9);
+  border: 2px solid rgba(48, 56, 64, 0.8);
+  border-radius: 5px;
+}
+
+.work .work__cards .work__card:hover .work__card__info {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 /*# sourceMappingURL=main.css.map */
