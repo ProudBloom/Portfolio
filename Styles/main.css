@@ -378,6 +378,12 @@ header .header__icons svg:hover {
   background: rgba(241, 241, 241, 0.9);
   border: 2px solid rgba(48, 56, 64, 0.8);
   border-radius: 5px;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+}
+
+.work .work__cards .work__card .work__card__info .card-btn:hover {
+  font-weight: 700;
 }
 
 .work .work__cards .work__card:hover .work__card__info {

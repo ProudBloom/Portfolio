@@ -336,6 +336,11 @@ header
                    background: rgba($color: $primary-color, $alpha: .9);
                    border: 2px solid rgba($color: $secondary-color, $alpha: .8);
                    border-radius: 5px;
+                   transition: .1s ease;
+                   &:hover
+                   {
+                       font-weight: 700;
+                   }
                 }
             }
             &:hover .work__card__info
