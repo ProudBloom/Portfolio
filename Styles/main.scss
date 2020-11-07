@@ -198,7 +198,7 @@ header
     }
     .about__skills
     {
-        margin: 5% 0;
+        margin: 3% 0;
         display: flex;
         justify-content: center;
         color: $text-color;
@@ -249,7 +249,6 @@ header
         }
 
     }
-
 }
 
 .work
@@ -276,7 +275,7 @@ header
             display: flex;
             align-items: flex-end;
             box-shadow: 0px 7px 10px rgba(0, 0, 0, .5);
-            transition: .5s ease-in-out;
+            transition: .4s ease-in-out;
             margin: 25px 15px;
             &:hover
             {
@@ -317,7 +316,7 @@ header
                 color: $primary-color;
                 opacity: 0;
                 transform: translateY(30px);
-                transition: .5s all;
+                transition: .8s all;
                 h2
                 {
                     margin-left: 5%;
@@ -328,6 +327,7 @@ header
                 }
                 .card-btn
                 {
+                   cursor: pointer;
                    padding: 15px 20px;
                    position: relative;
                    left: 15px;

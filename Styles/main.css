@@ -205,7 +205,7 @@ header .header__icons svg:hover {
 }
 
 .about .about__skills, .work .about__skills {
-  margin: 5% 0;
+  margin: 3% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,8 +310,8 @@ header .header__icons svg:hover {
           align-items: flex-end;
   -webkit-box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
   margin: 25px 15px;
 }
 
@@ -357,8 +357,8 @@ header .header__icons svg:hover {
   opacity: 0;
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
-  -webkit-transition: .5s all;
-  transition: .5s all;
+  -webkit-transition: .8s all;
+  transition: .8s all;
 }
 
 .work .work__cards .work__card .work__card__info h2 {
@@ -370,6 +370,7 @@ header .header__icons svg:hover {
 }
 
 .work .work__cards .work__card .work__card__info .card-btn {
+  cursor: pointer;
   padding: 15px 20px;
   position: relative;
   left: 15px;
