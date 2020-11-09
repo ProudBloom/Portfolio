@@ -254,6 +254,8 @@ header
 .work
 {
     @extend .about;
+    width: calc(100vw - $offset);
+    height: 100vh;
 
     h2
     {
@@ -269,7 +271,7 @@ header
 
         .work__card
         {
-            width: 420px;
+            width: 490px;
             height: 280px;
             position: relative;
             display: flex;
@@ -350,5 +352,51 @@ header
             }
         }
     }
-    
+}
+
+.contact
+{
+    @extend .about;
+
+    h2
+    {
+        @include headingElement();
+    }
+
+    form
+    {
+        width: calc(100vw - $offset);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+
+        label
+        {
+            margin-top: 15px;
+        }
+
+        input
+        {
+            width: 600px;
+            padding: 5px;
+        }
+
+        textarea
+        {
+            padding: 5px;
+            width: 600px;
+            height: 400px;
+            resize: none;
+        }
+
+        .submit-btt
+        {
+            margin-top: 15px;
+            width: 250px;
+            height: 60px;
+        }
+    }
 }
